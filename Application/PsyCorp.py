@@ -1984,7 +1984,7 @@ class HomePage(QMainWindow, Ui_HomePage):
                                          #hanin_test_button:hover {color: rgb(179, 166, 154);}
                                          """)
 
-        self.pixmap_icon = QPixmap('C:\\Users\\varna\\Desktop\\Code\\PsyCorp\\Images\\icon_small.png')
+        self.pixmap_icon = QPixmap('icon_small.png')
         
         self.icon = QLabel(self)
         self.icon.move(0, 0)
@@ -2047,7 +2047,7 @@ class AboutUsPage(QMainWindow, Ui_AboutUsPage):
                                          background-color: rgb(147, 140, 125);     
                                          }""")
 
-        self.pixmap_icon = QPixmap('C:\\Users\\varna\\Desktop\\Code\\PsyCorp\\Images\\icon_small.png')
+        self.pixmap_icon = QPixmap('icon_small.png')
         
         self.icon = QLabel(self)
         self.icon.move(0, 0)
@@ -2055,7 +2055,7 @@ class AboutUsPage(QMainWindow, Ui_AboutUsPage):
         self.icon.setPixmap(self.pixmap_icon)
 
 
-        self.pixmap_ogorod_photo = QPixmap('C:\\Users\\varna\\Desktop\\Code\\PsyCorp\\Images\\ogorodnik_photo.png')
+        self.pixmap_ogorod_photo = QPixmap('ogorodnik_photo.png')
         
         self.ogorod_photo = QLabel(self)
         self.ogorod_photo.move(700, 290)
@@ -2063,7 +2063,7 @@ class AboutUsPage(QMainWindow, Ui_AboutUsPage):
         self.ogorod_photo.setPixmap(self.pixmap_ogorod_photo)
 
 
-        self.pixmap_varn_photo = QPixmap('C:\\Users\\varna\\Desktop\\Code\\PsyCorp\\Images\\varn_photo.png')
+        self.pixmap_varn_photo = QPixmap('varn_photo.png')
         
         self.varn_photo = QLabel(self)
         self.varn_photo.move(140, 130)
@@ -2084,7 +2084,7 @@ class AyzenkTest(QMainWindow, Ui_AyzenkTest):
         self.initUI()
 
     def initUI(self):
-        self.TESTS_DB = sqlite3.connect("C:\\Users\\varna\\Desktop\\Code\\PsyCorp\\Data Bases\\tests.sqlite")
+        self.TESTS_DB = sqlite3.connect("tests.sqlite")
         self.cursor = self.TESTS_DB.cursor()
 
         self.take_question_sql = "SELECT * FROM AYZENK_TEST WHERE QUESTION_NUMBERS=?"
@@ -2140,7 +2140,7 @@ class AyzenkTest(QMainWindow, Ui_AyzenkTest):
        
 
 
-        self.pixmap_icon = QPixmap('C:\\Users\\varna\\Desktop\\Code\\PsyCorp\\Images\\icon_small.png')
+        self.pixmap_icon = QPixmap('icon_small.png')
         
         self.icon = QLabel(self)
         self.icon.move(0, 0)
@@ -2270,7 +2270,7 @@ class AyzenkTestResult(QMainWindow, Ui_AyzenkTestResult):
                                          }""")
        
 
-        self.pixmap_icon = QPixmap('C:\\Users\\varna\\Desktop\\Code\\PsyCorp\\Images\\icon_small.png')
+        self.pixmap_icon = QPixmap('icon_small.png')
         
         self.icon = QLabel(self)
         self.icon.move(0, 0)
@@ -2301,7 +2301,7 @@ class LsiTest(QMainWindow, Ui_LsiTest):
         self.initUI()
 
     def initUI(self):
-        self.TESTS_DB = sqlite3.connect("C:\\Users\\varna\\Desktop\\Code\\PsyCorp\\Data Bases\\tests.sqlite")
+        self.TESTS_DB = sqlite3.connect("tests.sqlite")
         self.cursor = self.TESTS_DB.cursor()
 
         self.take_question_sql = "SELECT * FROM LSI_TEST WHERE QUESTION_NUMBERS=?"
@@ -2361,7 +2361,7 @@ class LsiTest(QMainWindow, Ui_LsiTest):
        
 
 
-        self.pixmap_icon = QPixmap('C:\\Users\\varna\\Desktop\\Code\\PsyCorp\\Images\\icon_small.png')
+        self.pixmap_icon = QPixmap('icon_small.png')
         
         self.icon = QLabel(self)
         self.icon.move(0, 0)
@@ -2517,7 +2517,7 @@ class LsiTestResult(QMainWindow, Ui_LsiTestResult):
        
 
 
-        self.pixmap_icon = QPixmap('C:\\Users\\varna\\Desktop\\Code\\PsyCorp\\Images\\icon_small.png')
+        self.pixmap_icon = QPixmap('icon_small.png')
         
         self.icon = QLabel(self)
         self.icon.move(0, 0)
@@ -2548,7 +2548,7 @@ class EqTest(QMainWindow, Ui_EqTest):
         self.initUI()
 
     def initUI(self):
-        self.TESTS_DB = sqlite3.connect("C:\\Users\\varna\\Desktop\\Code\\PsyCorp\\Data Bases\\tests.sqlite")
+        self.TESTS_DB = sqlite3.connect("tests.sqlite")
         self.cursor = self.TESTS_DB.cursor()
 
         self.take_question_sql = "SELECT * FROM EQ_TEST WHERE QUESTION_NUMBERS=?"
@@ -2631,7 +2631,7 @@ class EqTest(QMainWindow, Ui_EqTest):
        
 
 
-        self.pixmap_icon = QPixmap('C:\\Users\\varna\\Desktop\\Code\\PsyCorp\\Images\\icon_small.png')
+        self.pixmap_icon = QPixmap('icon_small.png')
         
         self.icon = QLabel(self)
         self.icon.move(0, 0)
@@ -2809,8 +2809,8 @@ class EqTestResult(QMainWindow, Ui_EqTestResult):
                                          border: 0;
                                          padding: 0;
                                          text-align: left;}
-                                         #unsave_button:hover {color: rgb(179, 166, 154);}
-                                      """)
+                                         #unsave_button:hover {color: rgb(179, 166, 154);
+                                         }""")
         self.tests_menu_button.setStyleSheet("""#tests_menu_button{
                                          background-color: rgb(129, 123, 109);
                                          color: rgb(76, 68, 57);
@@ -2834,7 +2834,7 @@ class EqTestResult(QMainWindow, Ui_EqTestResult):
        
 
 
-        self.pixmap_icon = QPixmap('C:\\Users\\varna\\Desktop\\Code\\PsyCorp\\Images\\icon_small.png')
+        self.pixmap_icon = QPixmap('icon_small.png')
         
         self.icon = QLabel(self)
         self.icon.move(0, 0)
@@ -2865,7 +2865,7 @@ class RathusTest(QMainWindow, Ui_RathusTest):
         self.initUI()
 
     def initUI(self):
-        self.TESTS_DB = sqlite3.connect("C:\\Users\\varna\\Desktop\\Code\\PsyCorp\\Data Bases\\tests.sqlite")
+        self.TESTS_DB = sqlite3.connect("tests.sqlite")
         self.cursor = self.TESTS_DB.cursor()
 
         self.take_question_sql = "SELECT QUESTIONS FROM RATHUS_TEST WHERE QUESTION_NUMBERS=?"
@@ -2938,7 +2938,7 @@ class RathusTest(QMainWindow, Ui_RathusTest):
                                          background-color: rgb(147, 140, 125);     
                                          }""")
 
-        self.pixmap_icon = QPixmap('C:\\Users\\varna\\Desktop\\Code\\PsyCorp\\Images\\icon_small.png')
+        self.pixmap_icon = QPixmap('icon_small.png')
         
         self.icon = QLabel(self)
         self.icon.move(0, 0)
@@ -3088,7 +3088,7 @@ class RathusTestResult(QMainWindow, Ui_RathusTestResult):
        
 
 
-        self.pixmap_icon = QPixmap('C:\\Users\\varna\\Desktop\\Code\\PsyCorp\\Images\\icon_small.png')
+        self.pixmap_icon = QPixmap('icon_small.png')
         
         self.icon = QLabel(self)
         self.icon.move(0, 0)
@@ -3119,7 +3119,7 @@ class HaninTest(QMainWindow, Ui_HaninTest):
         self.initUI()
 
     def initUI(self):
-        self.TESTS_DB = sqlite3.connect("C:\\Users\\varna\\Desktop\\Code\\PsyCorp\\Data Bases\\tests.sqlite")
+        self.TESTS_DB = sqlite3.connect("tests.sqlite")
         self.cursor = self.TESTS_DB.cursor()
 
         self.take_question_sql = "SELECT QUESTIONS FROM HANIN_TEST WHERE QUESTION_NUMBERS=?"
@@ -3185,7 +3185,7 @@ class HaninTest(QMainWindow, Ui_HaninTest):
                                          background-color: rgb(147, 140, 125);     
                                          }""")
 
-        self.pixmap_icon = QPixmap('C:\\Users\\varna\\Desktop\\Code\\PsyCorp\\Images\\icon_small.png')
+        self.pixmap_icon = QPixmap('icon_small.png')
         
         self.icon = QLabel(self)
         self.icon.move(0, 0)
@@ -3347,7 +3347,7 @@ class HaninTestResult(QMainWindow, Ui_HaninTestResult):
        
 
 
-        self.pixmap_icon = QPixmap('C:\\Users\\varna\\Desktop\\Code\\PsyCorp\\Images\\icon_small.png')
+        self.pixmap_icon = QPixmap('icon_small.png')
         
         self.icon = QLabel(self)
         self.icon.move(0, 0)
